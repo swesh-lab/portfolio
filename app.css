@@ -1,0 +1,330 @@
+html {
+    cursor: crosshair;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0d1117;
+    font-family: 'Syncopate', 'Nunito', sans-serif;
+    color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+body .container {
+    width: 92%;
+}
+
+nav .container {
+    width: 92%;
+}
+
+#mainNavbar {
+    font-size: 0.8rem;
+    font-weight: 100;
+}
+
+#mainNavbar .nav-link {
+    color: rgb(255, 255, 255);
+}
+
+#mainNavbar .nav-link:hover {
+    color: #7ee787;
+}
+
+#mainNavbar .navbar-brand {
+    color: #ffffff;
+    font-size: 1.2rem;
+}
+
+.about-block {
+    margin-bottom: 120px;
+    margin-top: 120px;
+}
+
+#heading-block h1 {
+    font-weight: 100;
+    font-size: 6rem;
+    font-family: 'Syncopate', sans-serif;
+}
+
+#heading-block h2 {
+    font-weight: 100;
+    font-size: 2rem;
+    font-family: 'Syncopate', sans-serif;
+    text-align: justify;
+    text-justify: inter-character;
+}
+
+.wrapper {
+    word-wrap: break-word;
+}
+
+.content {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.subclause {
+    font-family: 'Dancing Script';
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.navbar.scrolled {
+    background: rgba(45, 45, 45, 0.5);
+    transition: 500ms;
+    color: #ffffff;
+}
+
+.card {
+    background: #161b22;
+    color: #ffffff;
+    font-size: 2rem;
+    font-family: 'Orbitron', 'Rubik Mono One', sans-serif;
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+}
+
+.card .card-text {
+    font-family: 'Syncopate', sans-serif;
+}
+
+.card-footer {
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 0.8rem;
+    font-family: 'Syncopate', sans-serif;
+}
+
+.card:hover .card-text {
+    color: #7ee787;
+    font-style: italic;
+}
+
+
+.card:hover .card-title {
+    color: #7ee787;
+}
+
+.project-style {
+    text-align: justify;
+    text-justify: inter-character;
+    font-family: 'Orbitron', 'Syncopate', sans-serif;
+    font-weight: 100;
+}
+
+.project-style:hover span {
+    color: #7ee787;
+    /* text-decoration: underline; */
+}
+
+.rotate-cw {
+    transform-origin: 0 0;
+    transform: rotate(2deg);
+}
+
+.rotate-acw {
+    transform-origin: 0 0;
+    transform: rotate(-2deg);
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: rgb(255, 255, 255);
+    background-image: linear-gradient(to right, rgb(29, 29, 29), rgb(45, 45, 45), rgb(29, 29, 29));
+}
+
+.scroll-text {
+    font-family: 'Geostar Fill', sans-serif;
+}
+
+::selection {
+    color: #7ee787;
+    background: rgb(29, 29, 29);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #7ee787;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(255, 255, 255);
+}
+
+:root {
+    --step-0: clamp(4.50rem, 3.64rem + 4.29vw, 9.00rem);
+}
+
+@-webkit-keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes marquee {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@-webkit-keyframes marquee-r {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes marquee-r {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* scroller */
+.marquee {
+    color: #fefefe;
+    height: calc(180px + 3rem);
+    overflow: hidden;
+    position: relative;
+    font-size: var(--step-0);
+}
+
+.track {
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 2rem 0;
+    position: absolute;
+    transition: 200ms ease, color 200ms ease;
+
+}
+
+.track .scroll-text {
+    -webkit-animation: marquee 40000ms linear infinite;
+    animation: marquee 40000ms linear infinite;
+    will-change: transform;
+    display: inline-flex;
+    align-items: center;
+}
+
+.track .scroll-text.-r {
+    -webkit-animation-name: marquee-r;
+    animation-name: marquee-r;
+}
+
+
+.light-mode {
+    background-color: #faf9f6;
+    color: #0d1117;
+}
+
+.light-mode body {
+    color: #0d1117;
+} 
+
+.light-mode p {
+    color: #0d1117;
+} 
+
+.light-mode h1 {
+    color: #0d1117;
+}
+
+.light-mode h2 {
+    color: #0d1117;
+}
+
+.light-mode .card {
+    background: #edeade;
+    color: #0d1117;
+}
+
+.light-mode .card-text {
+    color: #0d1117;
+}
+
+.light-mode .card-text:hover {
+    color: #0d1117;
+    font-weight: 600;
+}
+
+.light-mode .scroll-text {
+    color: #0d1117;
+}
+
+.light-mode #mainNavbar .navbar-brand {
+    color: #0d1117;
+}
+
+.light-mode #mainNavbar .nav-link {
+    color: #0d1117;
+}
+
+.light-mode #mainNavbar .nav-link:hover {
+    color: #0d1117;
+    font-weight: bold;
+}
+
+.light-mode .project-style:hover span {
+    color: #0d1117;
+    /* font-weight: bold; */
+    font-style: italic;
+}
+
+.light-mode .navbar.scrolled {
+    background: rgba(237, 234, 222, 0.5);
+    transition: 500ms;
+    color: #0d1117;
+}
+
+.light-mode ::selection {
+    color: #0d1117;
+    background: rgba(126, 231, 135, 0.2);
+}
+
+.light-mode::-webkit-scrollbar-thumb {
+    background: #0d1117;
+    border-radius: 10px;
+}
+
+.light-mode::-webkit-scrollbar-thumb:hover {
+    background: #7ee787;
+}
+
+@media (max-width: 1200px) {
+    #heading-block h1 {
+        font-weight: 100;
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    #skills-block .scroll-text {
+        font-weight: 100;
+        font-size: 1rem;
+    }
+}
